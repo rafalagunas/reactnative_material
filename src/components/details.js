@@ -14,7 +14,7 @@ import {
   ListItem
 } from "react-native-elements";
 
-const Details = () => (
+const Details = ({ navigation }) => (
   <ScrollView>
     <Card
       style={{ alignItems: "center" }}
@@ -26,7 +26,8 @@ const Details = () => (
       </Text>
       <Button
         icon={{ name: "code" }}
-        backgroundColor="#fff"
+        backgroundColor="#f43"
+        onPress={() => navigation.navigate("Home")}
         fontFamily="Lato"
         buttonStyle={{
           borderRadius: 0,

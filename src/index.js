@@ -26,7 +26,7 @@ const App = StackNavigator({
 
   },
   Details: {
-    screen: Details
+    screen: Details,
   }
 });
 

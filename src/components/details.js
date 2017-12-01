@@ -19,7 +19,7 @@ const Details = () => (
     <Card
       style={{ alignItems: "center" }}
       title=" USER NAME"
-      image={require("..s/images/pic2.jpg")}
+      image={require("../images/pic2.jpg")}
     >
       <Text style={{ marginBottom: 10, textAlign: "center" }}>
         DESCRIPCIÓN DEL PERFIL

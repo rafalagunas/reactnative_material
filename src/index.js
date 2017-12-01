@@ -17,19 +17,15 @@ import {
 import Home from "./components/home";
 import Details from "./components/details";
 
-const HomeScreen = ({ navigation }) => <Home />;
-
-const DetailsScreen = () => <Details />;
-
 const App = StackNavigator({
   Home: {
-    screen: HomeScreen,
+    screen: Home,
     navigationOptions: {
       headerTitle: "Home"
     }
   },
   Details: {
-    screen: DetailsScreen,
+    screen: Details,
     navigationOptions: {
       headerTitle: "Details"
     }

@@ -6,10 +6,10 @@ import {
   Button
 } from 'react-native-elements';
 
-class Success extends React.Component <{}> {
-render(){
+import { StackNavigator } from 'react-navigation';
 
-return (
+
+const SuccessView = ({ navigation }) => (
 <View>
 <Card
   title='HELLO WORLD'
@@ -21,14 +21,20 @@ return (
     icon={{name: 'code'}}
     backgroundColor='#03A9F4'
     fontFamily='Lato'
+    onPress={() => navigation.navigate('Success')}
+      title="Go to details"
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
 
 </View>
 );
-}
-}
 
-
-export default Success;
+const RootNavigator = StackNavigator({
+  Success: {
+    screen: SuccessView,
+    navigationOptions: {
+      headerTitle: 'Success',
+    }
+  },
+});

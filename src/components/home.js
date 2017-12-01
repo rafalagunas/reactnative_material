@@ -30,7 +30,7 @@ const Home = ({ navigation }) => (
      <FormLabel>Password</FormLabel>
      <FormInput />
      <Button
-       title="Registrarse"
+       title="Ingresar datos"
        rounded
        onPress={() => navigation.navigate("Details")}
        backgroundColor="#ee0606"

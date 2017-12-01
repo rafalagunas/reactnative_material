@@ -21,14 +21,12 @@ const App = StackNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
-      headerTitle: "Home"
+       header: null,
     }
+
   },
   Details: {
-    screen: Details,
-    navigationOptions: {
-      headerTitle: "Details"
-    }
+    screen: Details
   }
 });
 
